@@ -106,6 +106,10 @@ open class PseudoTeletypewriter {
         let	childpid1	=	waitpid(_childProcessID, &stat_loc, 0)
         return stat_loc
     }
+    
+    open func killChild(sig: Int32) {
+        kill(_childProcessID, sig)
+    }
 	
 	
 	
