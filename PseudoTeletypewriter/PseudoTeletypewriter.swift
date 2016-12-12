@@ -100,6 +100,12 @@ open class PseudoTeletypewriter {
             return false
         }
     }
+    
+    open func childProcessExitStatus() -> Int32 {
+        var	stat_loc	=	0 as Int32
+        let	childpid1	=	waitpid(_childProcessID, &stat_loc, 0)
+        return stat_loc
+    }
 	
 	
 	
