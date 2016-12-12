@@ -81,7 +81,24 @@ open class PseudoTeletypewriter {
 		let	childpid1	=	waitpid(_childProcessID, &stat_loc, 0)
 		debugLog("child process quit: pid = \(childpid1)")
 	}
-	
+
+    
+    open func isChildProcessFinished() -> Bool {
+        var stat_loc = 0 as Int32
+        let status = waitpid(_childProcessID, &stat_loc, WNOHANG)
+        switch(status) {
+        case -1:
+            debugLog("child process \(_childProcessID) does not exists")
+            return false
+        case 0:
+            return false
+        case _childProcessID:
+            return true
+        default:
+            debugLog("unknown return status \(status)")
+            return false
+        }
+    }
 	
 	
 	
