@@ -37,8 +37,6 @@ import BSD
 public final class PseudoTeletypewriter {
     private let _masterFileHandle:FileHandle
     private let _childProcessID:pid_t
-        }
-    }
     
     open func childProcessExitStatus() -> Int32 {
         var	stat_loc	=	0 as Int32
