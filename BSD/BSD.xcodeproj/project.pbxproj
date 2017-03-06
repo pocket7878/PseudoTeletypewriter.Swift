@@ -15,8 +15,6 @@
 		453686CD1A63E9B0000754F3 /* BSD_C.m in Sources */ = {isa = PBXBuildFile; fileRef = 453686B51A63E921000754F3 /* BSD_C.m */; };
 		4536870B1A63EBD9000754F3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536870A1A63EBD9000754F3 /* Utility.swift */; };
 		4536870C1A63EC3C000754F3 /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4536870A1A63EBD9000754F3 /* Utility.swift */; };
-		45CBA3F41A63F02C007A377E /* PseudoTeletypewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CBA3F31A63F02C007A377E /* PseudoTeletypewriter.swift */; };
-		45CBA3F71A63F462007A377E /* PseudoTeletypewriter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 45CBA3F31A63F02C007A377E /* PseudoTeletypewriter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -41,7 +39,6 @@
 		453686C21A63E962000754F3 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		453687091A63EBA2000754F3 /* BSD-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "BSD-Bridging-Header.h"; sourceTree = "<group>"; };
 		4536870A1A63EBD9000754F3 /* Utility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
-		45CBA3F31A63F02C007A377E /* PseudoTeletypewriter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PseudoTeletypewriter.swift; sourceTree = "<group>"; };
 		45CBA3F51A63F372007A377E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		45CBA3F81A63FCA7007A377E /* LICENSE.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = LICENSE.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,7 +88,6 @@
 				453686B61A63E921000754F3 /* BSD_C.h */,
 				453686B51A63E921000754F3 /* BSD_C.m */,
 				453686B71A63E921000754F3 /* BSD.swift */,
-				45CBA3F31A63F02C007A377E /* PseudoTeletypewriter.swift */,
 				4536870A1A63EBD9000754F3 /* Utility.swift */,
 				453686931A63E910000754F3 /* Supporting Files */,
 			);
@@ -217,7 +213,6 @@
 			files = (
 				453686B81A63E921000754F3 /* BSD_C.m in Sources */,
 				453686BA1A63E921000754F3 /* BSD.swift in Sources */,
-				45CBA3F41A63F02C007A377E /* PseudoTeletypewriter.swift in Sources */,
 				4536870B1A63EBD9000754F3 /* Utility.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -227,7 +222,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				4536870C1A63EC3C000754F3 /* Utility.swift in Sources */,
-				45CBA3F71A63F462007A377E /* PseudoTeletypewriter.swift in Sources */,
 				453686CD1A63E9B0000754F3 /* BSD_C.m in Sources */,
 				453686C31A63E962000754F3 /* main.swift in Sources */,
 				453686CC1A63E9AE000754F3 /* BSD.swift in Sources */,
