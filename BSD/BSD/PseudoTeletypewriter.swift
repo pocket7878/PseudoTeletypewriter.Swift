@@ -37,6 +37,23 @@ public final class PseudoTeletypewriter {
     private let _masterFileHandle:FileHandle
     private let _childProcessID:pid_t
 
+    
+    open func isChildProcessFinished() -> Bool {
+        var stat_loc = 0 as Int32
+        let status = waitpid(_childProcessID, &stat_loc, WNOHANG)
+        switch(status) {
+        case -1:
+            debugLog("child process \(_childProcessID) does not exists")
+            return false
+        case 0:
+            return false
+        case _childProcessID:
+            return true
+        default:
+            debugLog("unknown return status \(status)")
+            return false
+        }
+    }
     public init?(path:String, arguments:[String], environment:[String]) {
         assert(arguments.count >= 1)
         assert(path.hasSuffix(arguments[0]))

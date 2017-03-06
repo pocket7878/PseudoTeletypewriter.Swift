@@ -37,6 +37,18 @@ import BSD
 public final class PseudoTeletypewriter {
     private let _masterFileHandle:FileHandle
     private let _childProcessID:pid_t
+        }
+    }
+    
+    open func childProcessExitStatus() -> Int32 {
+        var	stat_loc	=	0 as Int32
+        let	childpid1	=	waitpid(_childProcessID, &stat_loc, 0)
+        return stat_loc
+    }
+    
+    open func killChild(sig: Int32) {
+        kill(_childProcessID, sig)
+    }
 
     public init?(path:String, arguments:[String], environment:[String]) {
         assert(arguments.count >= 1)
